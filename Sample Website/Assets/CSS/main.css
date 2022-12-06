@@ -1,0 +1,35 @@
+* {
+  font-family: "lexend deca";
+  box-sizing: border-box;
+  padding: 0;
+}
+
+header {
+  background-color: #29182e;
+  color: #f6f7f1;
+  text-align: center;
+  display: flex;
+}
+.logo {
+  color: #f14c36;
+  font-size: 2rem;
+  margin: 20px auto;
+}
+#get-started {
+  font-size: 1.25rem;
+}
+h1 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.5rem;
+}
+p {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+@media screen and (min-width: 641px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
