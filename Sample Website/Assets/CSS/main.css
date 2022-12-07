@@ -2,48 +2,105 @@
   font-family: "lexend deca";
   box-sizing: border-box;
   padding: 0;
+  margin: 0;
 }
+
+/* header styling start */
 
 header {
   background-color: #29182e;
   color: #f6f7f1;
+  text-align: center;
+  height: 125vh;
 }
+
 .header-flex-container {
   display: flex;
-  flex-direction: column;
 
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
-#box1 {
-  order: 1;
-}
-#box2 {
-  order: 4;
-}
-#box3 {
-  order: 2;
-}
-#box4 {
-  order: 3;
-}
+
 .logo {
   color: #f14c36;
   font-size: 2rem;
-  margin: 20px auto;
+  letter-spacing: 0.15em;
 }
 
-h1 {
+#box1 {
+  margin-bottom: 160px;
+  margin-top: 30px;
+}
+
+#box2 {
+  order: 4;
+  background-color: #f14c36;
+  border-radius: 50px;
+  width: 250px;
+  height: 60px;
+  align-self: center;
+  margin: 30px auto;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#get-started {
+  font-size: 1.25rem;
+  letter-spacing: 0.15em;
+}
+
+#box3 {
   font-style: normal;
   font-weight: 500;
   font-size: 2.5rem;
+  letter-spacing: 0.15em;
+  padding: 20px;
 }
-p {
+
+#box4 {
   font-weight: 400;
   font-size: 1.25rem;
+  padding: 20px;
 }
-#get-started {
-  font-size: 1.25rem;
+
+/* header styling end */
+
+/* hero styling start */
+
+.hero {
+  text-align: center;
+  background-color: #f6f7f1;
 }
+
+.hero h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  font-style: normal;
+  padding: 20px;
+}
+
+.hero img {
+  display: block;
+  margin: 20px auto;
+}
+
+.hero p {
+  padding: 20px;
+}
+.social {
+  color: #f14c36;
+}
+
+.integrity {
+  color: #436b2c;
+}
+
+/* hero styling end */
+
 @media screen and (min-width: 641px) {
   h1 {
     font-size: 3rem;
