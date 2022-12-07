@@ -11,12 +11,11 @@ header {
   background-color: #29182e;
   color: #f6f7f1;
   text-align: center;
-  height: 125vh;
+  height: 100vh;
 }
 
 .header-flex-container {
   display: flex;
-
   flex-direction: column;
   gap: 20px;
 }
@@ -100,6 +99,72 @@ header {
 }
 
 /* hero styling end */
+
+/* Statements styling start */
+
+.statements-container {
+  display: flex;
+  align-items: center;
+  /* height: 80vh; */
+  flex-direction: column;
+  text-align: center;
+  background-color: #f6f7f1;
+}
+
+.statements-container div {
+  padding: 30px;
+}
+
+#statements-box0 {
+  font-weight: 500;
+  letter-spacing: 0.15rem;
+  font-size: 2rem;
+}
+
+.fa-3x {
+  padding: 15px;
+}
+#statements-box1 {
+  color: #f14c36;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+#statements-box2 {
+  color: #436b2c;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+#statements-box3 {
+  color: #ecb20d;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+/* Statements styling end */
+
+/* Footer styling start */
+footer {
+  background-color: #29182e;
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+#footer-box0,
+#footer-box2 {
+  padding: 20px;
+}
+
+nav {
+  color: #ecb20d;
+}
+
+#footer-box2 {
+  color: #f6f7f1;
+}
+/* Footer styling end */
 
 @media screen and (min-width: 641px) {
   h1 {
