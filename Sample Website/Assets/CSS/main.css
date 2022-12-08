@@ -66,9 +66,6 @@ header {
   padding: 20px;
 }
 
-#box5 {
-  display: none;
-}
 /* header styling end */
 
 /* hero styling start */
@@ -174,40 +171,67 @@ nav {
 }
 /* Footer styling end */
 
+@media screen and (max-width: 640px) {
+  #header-img {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 641px) {
   .header-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 20px;
+
     grid-template-areas:
-      "logo header-img button "
-      "header-title header-title header-title"
-      "header-paragraph header-paragraph header-paragraph";
+      "logo logo button "
+      "header-title header-title header-img"
+      "header-paragraph header-paragraph header-img";
   }
 
   #box1 {
     grid-area: logo;
-    position: relative;
+    /* position: absolute; */
+    margin: 60px auto auto 50px;
+    justify-self: left;
+    align-self: auto;
   }
 
   #box2 {
     grid-area: button;
+    /* position: absolute; */
+    align-self: auto;
+    margin: 50px 50px auto auto;
   }
 
   #box3 {
     grid-area: header-title;
     font-size: 3rem;
+    /* position: absolute; */
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 300px;
   }
 
   #box4 {
     grid-area: header-paragraph;
+    /* position: absolute; */
+    text-align: left;
+    margin-left: 100px;
+    margin-bottom: 500px;
   }
 
   #box5 {
     grid-area: header-img;
-  }
+    align-self: flex-end;
 
+    /* position: absolute; */
+  }
+  #header-img {
+    height: 1000px;
+    padding-bottom: 200px;
+  }
   /* header styling end */
 
   /* hero styling start */
@@ -226,7 +250,7 @@ nav {
     text-align: right;
   }
   .hero {
-    height: 100vh;
+    height: 80vh;
     position: relative;
   }
   .hero p {
@@ -238,22 +262,31 @@ nav {
     width: 400px;
     text-align: right;
   }
-}
 
-/* .nested-hero {
+  /* hero styling end */
+
+  /* statements styling start */
+  .statements-container {
+    height: 80vh;
+    padding-top: 50px;
+  }
+  .statements-nested {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+  }
+
+  /* statements styling end */
+
+  /* footer styling start */
+
+  .nav-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
+    justify-content: space-around;
   }
-  .hero h2 {
-    align-self: center;
+
+  .nav-link {
+    padding: 20px;
   }
-  .hero p {
-    align-self: end;
-  }
-  .hero img {
-    margin: 20px 20px;
-    display: inline;
-  }
-} */
+}
