@@ -88,7 +88,10 @@ header {
 
 .hero img {
   display: block;
-  margin: 20px auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .hero p {
@@ -210,19 +213,21 @@ nav {
   /* hero styling start */
 
   .hero img {
-    float: left;
-    /* margin-right: 500px; */
+    position: absolute;
+    padding-left: 20px;
   }
 
   .nested-hero {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-end;
     padding-top: 20%;
+    padding-left: 20%;
     text-align: right;
   }
   .hero {
-    /* height: 80vh; */
+    height: 100vh;
+    position: relative;
   }
   .hero p {
     width: 400px;
