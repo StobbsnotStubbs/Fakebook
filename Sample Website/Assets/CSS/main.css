@@ -66,6 +66,9 @@ header {
   padding: 20px;
 }
 
+#box5 {
+  display: none;
+}
 /* header styling end */
 
 /* hero styling start */
@@ -171,65 +174,36 @@ nav {
 }
 /* Footer styling end */
 
-@media screen and (max-width: 640px) {
-  #header-img {
-    display: none;
-  }
-}
-
 @media screen and (min-width: 641px) {
   .header-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 20px;
-    /* position: relative; */
-    grid-template-areas:
-      "logo logo button "
-      "header-title header-title header-img"
-      "header-paragraph header-paragraph header-img";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-
   #box1 {
-    grid-area: logo;
-    /* position: absolute; */
-    margin: 60px auto auto 50px;
-    justify-self: left;
-    align-self: auto;
+    order: 1;
+    /* flex-grow: 1; */
+    flex-basis: 70%;
+    text-align: left;
+    padding-left: 20px;
   }
 
   #box2 {
-    grid-area: button;
-    /* position: absolute; */
-    align-self: auto;
-    margin: 50px 50px auto auto;
+    order: 2;
+    align-self: flex-start;
   }
-
   #box3 {
-    grid-area: header-title;
-    font-size: 3rem;
-    /* position: absolute; */
+    order: 3;
     text-align: left;
-    margin-left: 100px;
-    margin-top: 300px;
   }
 
   #box4 {
-    grid-area: header-paragraph;
-    /* position: absolute; */
-    text-align: left;
-    margin-left: 100px;
-    margin-bottom: 500px;
+    order: 4;
+    align-self: flex-start;
   }
 
   #box5 {
-    grid-area: header-img;
-    /* align-self: flex-end; */
-    max-height: fit-content;
-    /* position: absolute; */
-  }
-  #header-img {
-    max-height: fit-content;
+    order: 5;
   }
   /* header styling end */
 
